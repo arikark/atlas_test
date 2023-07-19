@@ -1,9 +1,9 @@
-schema "app" {
+schema "example" {
 
 }
 
 table "users" {
-  schema = schema.app
+  schema = schema.example
   column "id" {
     type = int
   }
@@ -13,13 +13,16 @@ table "users" {
   column "email" {
     type   = varchar(255)
   }
+  column "mobile" {
+    type = varchar(255)
+}
   primary_key {
     columns = [column.id]
   }
 }
 
 table "posts" {
-  schema = schema.app
+  schema = schema.example
   column "id" {
     type = int
   }
