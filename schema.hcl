@@ -10,7 +10,7 @@ table "users" {
   column "user_name" {
     type   = varchar(255)
   }
-  column "email" {
+  column "emails" {
     type   = varchar(255)
   }
   column "mobile" {
